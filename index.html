@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Lockdown 2020</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Main container-->
+    <div id="container">
+        
+        <div id="title">Lockdown 2020</div>
+   
+        <div id="start">Start</div>
+
+        <div id="quiz" style="display: none">
+
+            <div id="question"></div>
+
+            <div id="qImg"></div>
+
+            <div id="choices">
+                   <!-- onclick event voor js.file, checkAnwer functie aanroepen-->
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+
+            </div>
+
+            <div id="timer">
+
+                <div id="counter"></div>
+
+            </div>
+             
+            <div id="score"></div>
+
+            <div id="lives"></div>
+
+        </div>
+        <!-- Eindscore scherm container-->
+        <div id="endScore" style="display: none"></div>
+        <!-- Game over scherm container-->
+        <div id="gameOver" style="display: none"></div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
